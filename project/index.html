@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVerse | Profile</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProfile()">
+
+<header>
+    <div class="logo">EduVerse</div>
+
+    <div class="nav-container">
+        <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Files</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="right-icons">
+        <!-- THEME -->
+        <div id="ChangeTheme" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+            <span>Theme</span>
+        </div>
+
+    
+        <div class="logout-btn">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Log OUT</span>
+        </div>
+    </div>
+</header>
+
+<!-- PROFILE HEADER -->
+<section class="glass-card profile-hero">
+    <div class="user-meta">
+        <div class="profile-icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div>
+            <h1 id="fullName">User Name</h1>
+            <p id="username" style="color:var(--primary-color)">username</p>
+            <p class="small" id="emailView"></p>
+        </div>
+    </div>
+</section>
+
+<div class="grid">
+    <!-- EDIT PROFILE -->
+    <div class="glass-card">
+        <h2>Edit Profile</h2>
+        <div class="input-group">
+            <input id="firstName" placeholder="First Name">
+        </div>
+        <div class="input-group">
+            <input id="lastName" placeholder="Last Name">
+        </div>
+        <div class="input-group">
+            <input id="userName" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <input id="email" placeholder="University Email">
+        </div>
+        <div class="input-group">
+            <input id="password" type="password" placeholder="Password">
+        </div>
+        <button class="btn" onclick="saveProfile()">Save Changes</button>
+    </div>
+
+    <!-- INFO -->
+    <div class="glass-card">
+        <h3 class="section-title">Courses</h3>
+        <div class="list-card">Ethical Hacking Advanced</div>
+        <div class="list-card">Network Security Mastery</div>
+        <div class="list-card">Linux for Hackers</div>
+        <div class="list-card">Web Pentesting</div>
+
+        <h3 class="section-title">Achievements</h3>
+        <div class="list-card">Bug Hunter</div>
+        <div class="list-card">Top Learner</div>
+        <div class="list-card">Fast Coder</div>
+        <div class="list-card">Cyber Elite Member</div>
+
+        <h3 class="section-title">Skills</h3>
+        <span class="tag">Cyber Security</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Python</span>
+        <span class="tag">Linux</span>
+    </div>
+</div>
+
+<!-- JS Link -->
+<script src="script.js"></script>
+</body>
+</html>
