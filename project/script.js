@@ -1,4 +1,4 @@
-/* ================= PROFILE ================= */
+
 function loadProfile() {
     const user = JSON.parse(localStorage.getItem("currentUser"));
     if (!user) return;
